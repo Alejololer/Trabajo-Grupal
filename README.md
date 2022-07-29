@@ -37,4 +37,4 @@ que sea el tamaño de la estructura en bits (sizeof(person)).
 ```
 Esto podria ser util para que la lectura o la escritura sean mas agiles.
 
-Nota: ios::beg se refiere al inicio del archivo, del ingles beginning.
+Nota: ios::beg se refiere al inicio del archivo, del ingles beginning. Y ios::end se refiere al final del archivo, del ingles para final.
