@@ -36,3 +36,5 @@ que sea el tamaño de la estructura en bits.
    records.seekg(recNum * sizeof(person), ios::beg);
 ```
 Esto podria ser util para que la lectura o la escritura sean mas agiles.
+
+Nota: ios::beg se refiere al inicio del archivo, del ingles beginning.
