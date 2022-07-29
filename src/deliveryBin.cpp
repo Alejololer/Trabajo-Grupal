@@ -49,12 +49,14 @@ int main()
                 agregarProvincia();
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 break;
             case PRESENTAR:
                 system("cls");
                 presentarProvincias();
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 break;
             case BUSCAR:
                 system("cls");
@@ -62,6 +64,7 @@ int main()
                 presentarProvincia();
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 break;
             case BUSCARAV: 
                 system("cls");
@@ -69,6 +72,7 @@ int main()
                 buscarAv();
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 break;
             case GUARDAR:
                 system("cls");
@@ -76,6 +80,7 @@ int main()
                 escribirArchivoBinario();
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 break;
             case ELIMINAR:
                 system("cls");
@@ -83,6 +88,7 @@ int main()
                 borrarProvincias();
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 break;
             case SALIR:
                 system("cls");
@@ -90,6 +96,7 @@ int main()
                 cout << "Gracias por usarnos!";
                 cout<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
+                system("cls");
                 exit(0);
             default:
             SetColor(BLACK,RED);
