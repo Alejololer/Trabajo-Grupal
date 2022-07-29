@@ -90,11 +90,24 @@ int main()
                 getch();
                 system("cls");
                 break;
+            case CREDITOS:
+                system("cls");
+                SetColor(BLACK,WHITE);
+                cout << "Creador por:"<<endl
+                     <<"Sebastian Aisalla"<<endl<<"mario.aisalla@epn.edu.ec"<<endl
+                     <<"Carlos Aleman"<<endl<<"carlos.aleman@epn.edu.ec"<<endl
+                     <<"Luis Caiza"<<endl<<"luis.caiza03@epn.edu.ec"<<endl
+                     <<"Brithany Lopez"<<endl<<"mario.aisalla@epn.edu.ec"<<endl
+                     <<"Nicolas Reinoso"<<endl<<"mario.aisalla@epn.edu.ec"<<endl
+                     <<"Stalin Yungan"<<endl<<"stalin.yungan@epn.edu.ec"<<endl;
+                getch();
+                system("cls");
+                break;
             case SALIR:
                 system("cls");
                 SetColor(BLACK,LGREEN);
                 cout << "Gracias por usarnos!";
-                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para finalizar"<<endl;
                 getch();
                 system("cls");
                 exit(0);
@@ -255,6 +268,7 @@ int menu()
         << BUSCARAV     << " | Busqueda avanzada de provincia |"  << endl
         << GUARDAR      << " |      Guardar los cambios       |"  << endl
         << ELIMINAR     << " |     Eliminar una provincia     |"  << endl
+        << CREDITOS     << " |           Creditos             |"  << endl
         << SALIR        << " |       Salir del programa       |" <<endl
         << "Su seleccion:";
         cin >> eleccion;

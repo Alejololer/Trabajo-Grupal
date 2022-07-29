@@ -35,7 +35,7 @@ void SetColor(int Background, int Text){
 }
 enum MES { ENE = 1, FEB, MAR, ABR, MAY, JUN, JUL, AGO, SEP, OCT, NOV, DIC };
 
-enum MENU { SALIR = 0, AGREGAR, PRESENTAR, BUSCAR, BUSCARAV, GUARDAR, ELIMINAR };
+enum MENU { SALIR = 0, AGREGAR, PRESENTAR, BUSCAR, BUSCARAV, GUARDAR, ELIMINAR, CREDITOS };
 //enum MENU_DELIVERY {AGREGAR = 0, , GUARDAR, SALIR};
 
 void showProgressBar_u( string nombre, int indexLetra)
