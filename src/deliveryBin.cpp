@@ -4,6 +4,7 @@
 #include <string>
 #include <cstring>
 #include <sstream> 
+#include <conio.h>
 #include "../lib/global.h"
 
 using namespace std;
@@ -16,7 +17,7 @@ struct provincia
     char lstPlatoTipico[100];
 };
 vector <provincia> lstProvincia;
-const string pathfilebinary = "resorce\\database\\delivery.dat";
+const string pathfilebinary = "..\\resorce\\database\\delivery.dat";
 
 bool existRepetido(string elemento);
 bool leerArchivoBinario();
@@ -43,31 +44,52 @@ int main()
         {
             
             case AGREGAR:
+                system("cls");
                 SetColor(BLACK,BLUE);
                 agregarProvincia();
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 break;
             case PRESENTAR:
+                system("cls");
                 presentarProvincias();
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 break;
             case BUSCAR:
+                system("cls");
                 SetColor(BLACK,CYAN);
                 presentarProvincia();
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 break;
             case BUSCARAV: 
+                system("cls");
                 SetColor(BLACK,MAGENTA);
                 buscarAv();
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 break;
             case GUARDAR:
+                system("cls");
                 SetColor(BLACK, LGREEN);
                 escribirArchivoBinario();
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 break;
             case ELIMINAR:
+                system("cls");
                 SetColor(BLACK, LRED);
                 borrarProvincias();
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 break;
             case SALIR:
+                system("cls");
                 SetColor(BLACK,LGREEN);
                 cout << "Gracias por usarnos!";
+                cout<<"Presione cualquier tecla para continuar"<<endl;
+                getch();
                 exit(0);
             default:
             SetColor(BLACK,RED);
@@ -76,7 +98,6 @@ int main()
         }
     }while (true);
 } 
-
 bool leerArchivoBinario()
 {
     ifstream rf(pathfilebinary, ios::in | ios::binary);
@@ -153,7 +174,7 @@ void presentarProvincia()
     string prov = "";
     do
     {
-        cout <<"Ingrese (i) para usar el Id de la provincia, o (n) para buscar por el nommbre: ";
+        cout <<"Ingrese (i) para usar el Id de la provincia, o (n) para buscar por el nombre: ";
         cin>>opcion;
         cin.ignore();
     }while(opcion!='n'&&opcion!='N'&&opcion!='i'&&opcion!='I');
