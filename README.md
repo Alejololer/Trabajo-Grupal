@@ -29,9 +29,9 @@ Otro ejemplo que se nos presento en los archivos del profesor donde se lo usa pa
     fin.seekg(0, ifstream::beg);
     fin.read((char*)&student2, sizeof(student2));
 ```
-Y un ultimo ejemplo donde se multiplica la eleccion del usuario (recNum) por el tamaño en bits de los mismos datos, que en este caso son estructuras
+Y un ultimo ejemplo donde se multiplica la eleccion del usuario (recNum) por el tamaño en bits de los mismos datos, que en este caso son estructuras,
 para saltarse a la alocacion correspondiente que se calcula automaticamente mediante la multiplicacion que se le entrega a seekg(), esto cada 20, 30 o cualesquiera
-que sea el tamaño de la estructura en bits.
+que sea el tamaño de la estructura en bits (sizeof(person)).
 ```c++
    records.seekg(recNum * sizeof(person), ios::beg);
 ```
