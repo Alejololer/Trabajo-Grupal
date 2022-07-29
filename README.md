@@ -11,8 +11,8 @@ realizar las acciones desde esa posicion. Existe una variacion para la lectura y
 
 Su sintaxis es, suponiendo que f sea el nombre del fichero:
 ```c++
-  f.seekp(numero de bites);
-  f.seekg(numero de bites);
+  f.seekp(posicion en el archivo);
+  f.seekg(posicion en el archivo);
 ```
 Un ejemplo donde int length adquiriria el valor de la longitud del archivo
 ```c++
