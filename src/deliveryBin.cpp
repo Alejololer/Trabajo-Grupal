@@ -47,14 +47,14 @@ int main()
                 system("cls");
                 SetColor(BLACK,BLUE);
                 agregarProvincia();
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 break;
             case PRESENTAR:
                 system("cls");
                 presentarProvincias();
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 break;
@@ -62,7 +62,7 @@ int main()
                 system("cls");
                 SetColor(BLACK,CYAN);
                 presentarProvincia();
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 break;
@@ -70,7 +70,7 @@ int main()
                 system("cls");
                 SetColor(BLACK,MAGENTA);
                 buscarAv();
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 break;
@@ -78,7 +78,7 @@ int main()
                 system("cls");
                 SetColor(BLACK, LGREEN);
                 escribirArchivoBinario();
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 break;
@@ -86,7 +86,7 @@ int main()
                 system("cls");
                 SetColor(BLACK, LRED);
                 borrarProvincias();
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 break;
@@ -94,7 +94,7 @@ int main()
                 system("cls");
                 SetColor(BLACK,LGREEN);
                 cout << "Gracias por usarnos!";
-                cout<<"Presione cualquier tecla para continuar"<<endl;
+                cout<<endl<<"Presione cualquier tecla para continuar"<<endl;
                 getch();
                 system("cls");
                 exit(0);
